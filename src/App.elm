@@ -1,7 +1,7 @@
 module App exposing
   (main)
 
-{-| Main module of the Publeaks mobile web-app. Exports the web app as `app : Program Flags Model Msg`. Mount this app in your HTML source with javascript using:
+{-| This is the main module of the Publeaks mobile web-app. This module exports the web app as `app : Program Flags Model Msg`. Mount this app in your HTML source with javascript using:
 
     flags = { "server" : "//example.com", .. };
     mount = document.getElementById('my-app');
