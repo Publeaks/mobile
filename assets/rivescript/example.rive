@@ -1,0 +1,10 @@
+! version = 2.0
+
++ hello|hello *
+- Hello, human<send>My name is Marvin<delay seconds=3>How do you do?
+
++ * the best
+- Yay!
+
++ * the worst
+- <noreply>

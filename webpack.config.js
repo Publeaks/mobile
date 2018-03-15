@@ -1,10 +1,27 @@
+const path = require('path');
+
 module.exports = {
-  entry: './assets/js/init.js',
   target: 'web',
+  mode : 'development',
+  entry: './assets/js/init.js',
   output: {
     filename: 'bundle.js'
   },
-  mode : 'development',
+  module: {
+    rules: [
+      {
+        test: /\.(html|css|rive)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      }
+    ]
+  },
   node: {
     fs: 'empty'
   }

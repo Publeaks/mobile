@@ -1,0 +1,25 @@
+#app {
+  background: url("img/pattern.png") repeat;
+  max-width: calc(100vw);
+  width: 920px;}
+#app > nav {
+  background-color: rgba(248, 249, 250, 0.9);
+  max-width: calc(100vw);
+  width: 920px; }
+#app > div.controls {
+  max-width: calc(100vw - 20px);
+  width: 720px; }
+#app > div.history {
+  min-height: 100vh;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+#app > div.history > div.media {
+  max-width: 95%; }
+#app > div.history > div.media .card {
+  margin-bottom: 14px;
+  margin-left: 10%;
+  margin-right: 10%; }
+#app > div.history > div.media .btn {
+  margin-bottom: 14px; }
+.btn-outline-primary:hover {
+  color: #f8f9fa; }

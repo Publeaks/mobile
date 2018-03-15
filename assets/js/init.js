@@ -1,3 +1,8 @@
+// Require static assets
+import '../html/index.html';
+import '../css/styles.css';
+
+// Require libraries
 import RiveScript from 'rivescript';
 import Elm from './app.js';
 
@@ -36,6 +41,6 @@ function init (mnt, brains) {
 }
 
 (function(){
-  var mnt = document.getElementById('my-app');
+  var mnt = document.getElementById('app');
   init(mnt, ["example.rive"]);
 })();

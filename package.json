@@ -8,6 +8,7 @@
     "rivescript": "^1.19.0"
   },
   "devDependencies": {
+    "file-loader": "^1.1.11",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.11"
   },
