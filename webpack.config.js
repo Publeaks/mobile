@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html|css|rive)$/,
+        test: /\.(html|css|rive|png)$/,
         use: [
           {
             loader: 'file-loader',
@@ -22,6 +23,18 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+    new webpack.ProvidePlugin({
+      Popper: 'popper.js'
+    }),
+    new webpack.ProvidePlugin({
+      RiveScript: 'rivescript'
+    })
+  ],
   node: {
     fs: 'empty'
   }
