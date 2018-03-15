@@ -1,4 +1,4 @@
-module App exposing
+module Main exposing
   (main)
 
 {-| This is the main module of the Publeaks mobile web-app. This module exports the web app as `app : Program Flags Model Msg`. Mount this app in your HTML source with javascript using:
@@ -20,11 +20,12 @@ module App exposing
 
   # `main` entry point
 
-@docs main
+@docs app
 -}
 
 
 import Html
+import Html.Attributes as Attrs
 
 
 type alias Flags =

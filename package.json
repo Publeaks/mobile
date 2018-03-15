@@ -1,13 +1,15 @@
 {
-  "name": "Publeaks mobile",
+  "name": "mobile",
   "version": "1.0.0",
-  "description": "privately and anonymously snap-'n-share tip-offs with the media",
+  "description": "Publeaks Mobile -- privately and anonymously snap-'n-share tip-offs with the media",
   "main": "index.js",
   "dependencies": {
-    "npm": "^5.7.1"
+    "npm": "^5.7.1",
+    "rivescript": "^1.19.0"
   },
   "devDependencies": {
-    "webpack": "^4.1.1"
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

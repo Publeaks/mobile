@@ -1,3 +1,5 @@
 .DS_Store
 /elm-stuff
 /node_modules
+/assets/js/app.js
+/dist
