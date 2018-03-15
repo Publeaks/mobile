@@ -1,15 +1,5 @@
-// Static assets: CSS
-import '../img/pattern.png'
-
-// Static assets: CSS
+// Import javascript; static assets
 import 'animate.css';
-import '../css/toolkit-minimal.min.css';
-import '../css/styles.css';
-
-// Static assets:  HTML
-import '../html/index.html';
-
-// Static assets: JS
 import './toolkit.js';
 import Elm from './app.js';
 
@@ -51,5 +41,5 @@ function init (mnt, brains) {
 
 (function(){
   var mnt = document.getElementById('app');
-  init(mnt, ["example.rive"]);
+  init(mnt, ["rivescript/example.rive"]);
 })();

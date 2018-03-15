@@ -1,5 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
+const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   target: 'web',
@@ -11,12 +12,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html|css|rive|png)$/,
+        test: /\.(css)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]'
+              name: 'css/[name].[ext]'
             }
           }
         ]
@@ -24,6 +25,12 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: './assets/css/', to: 'css/' },
+      { from: './assets/img/', to: 'img/' },
+      { from: './assets/html/', to: '' },
+      { from: './assets/rivescript/', to: 'brain/' }
+    ]),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'

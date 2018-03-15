@@ -1,5 +1,5 @@
 #app {
-  background: url("pattern.png") repeat;
+  background: url("img/pattern.png") repeat;
   max-width: calc(100vw);
   width: 920px;}
 #app > nav {
